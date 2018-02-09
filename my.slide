@@ -31,6 +31,10 @@ Two of the Go inventors (Thompson & Pike) created UTF-8 uses bytes but variable 
 - WTF-8
 Wobbly Transformation Format (probably something Very Bad)
 
+* BEER
+
+.play beer.go /START OMIT/,/END OMIT/
+
 * UTF-8
 
 - 1 to 4 bytes per codepoint (1 byte ASCII)
