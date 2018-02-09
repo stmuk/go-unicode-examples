@@ -1,0 +1,69 @@
+Go Unicode 
+A Simple, Quick Introduction for Humans
+
+Steve Mynott
+steve.mynott@gmail.com
+http://url/
+@steve_mynott
+
+* Introduction
+
+US-ASCII - 127 characters
+
+Unicode 10 (June 2017) - 136,690 characters. 
+
+* Encodings
+
+- UTF-32 
+simple only fixed length encoding but wasteful in terms of commonly used chars
+
+- UTF-8
+Two of the Go inventors (Thompson & Pike) created UTF-8 uses bytes but variable length encoding
+
+- WTF-8
+Wobbly Transformation Format (probably something Very Bad)
+
+* UTF-8
+
+- 1 to 4 bytes per codepoint (1 byte ASCII)
+
+Look at the first byte high bits
+0xxxxxxx (1 byte ASCII) 127 possible 
+110xxxxx 10xxxxxx 2047 possible
+
+* Examples
+
+- 16 bit codepoint
+
+In go .code fmt.println("\u00A3")
+
+In vim "Ctrl-v u 00A3"
+
+£
+
+- 32 bit "Cat - tears of laughter"
+
+In go .code fmt.println("\U0001f639")
+
+In vim "Ctrl-v U 0001f639"
+😹 
+
+* Cat
+
+.play cat.go
+
+* Weirdd
+.play weirdd.go
+
+* The Stack
+
+- Graphemes - human language character 
+
+- Codepoints - things unicode spec gives numbers to (Go rune or int32)
+
+- Bytes - disk or memory
+
+
+* Normalisation
+
+.play normalisation.go
