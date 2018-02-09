@@ -6,9 +6,8 @@ import (
 	"golang.org/x/text/unicode/norm"
 )
 
+// START OMIT
 func main() {
-	// weird d character
-	fmt.Println()
 	weird := "D\u0323\u0307"
 	fmt.Println(weird)
 	fmt.Printf("length in bytes: %d\n", len(weird))
@@ -26,3 +25,5 @@ func countGraphemes(s string) int {
 	}
 	return nc
 }
+
+// END OMIT

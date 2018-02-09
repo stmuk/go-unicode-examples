@@ -1,4 +1,3 @@
-// https://blog.golang.org/normalization
 package main
 
 import "fmt"
@@ -7,12 +6,11 @@ import "golang.org/x/text/unicode/norm"
 
 func main() {
 
-	// normalisation
+	// START OMIT
 	one := "\u00e9"
 	two := "e\u0301"
 
-	fmt.Println(one)
-	fmt.Println(two)
+	fmt.Println(one, two)
 
 	if one == two {
 		fmt.Println("OK")
@@ -26,4 +24,5 @@ func main() {
 		fmt.Println("NOT OK")
 	}
 
+	// END OMIT
 }

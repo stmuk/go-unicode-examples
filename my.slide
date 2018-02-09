@@ -12,6 +12,14 @@ US-ASCII - 127 characters
 
 Unicode 10 (June 2017) - 136,690 characters. 
 
+* The Stack
+
+- Graphemes - human language character 
+
+- Codepoints - things unicode spec gives numbers to (Go rune or int32)
+
+- Bytes - disk or memory
+
 * Encodings
 
 - UTF-32 
@@ -28,8 +36,8 @@ Wobbly Transformation Format (probably something Very Bad)
 - 1 to 4 bytes per codepoint (1 byte ASCII)
 
 Look at the first byte high bits
-0xxxxxxx (1 byte ASCII) 127 possible 
-110xxxxx 10xxxxxx 2047 possible
+  0xxxxxxx (1 byte ASCII) 127 possible 
+  110xxxxx 10xxxxxx 2047 possible
 
 * Examples
 
@@ -50,20 +58,12 @@ In vim "Ctrl-v U 0001f639"
 
 * Cat
 
-.play cat.go
+.play cat.go /START OMIT/,/END OMIT/
 
 * Weirdd
-.play weirdd.go
-
-* The Stack
-
-- Graphemes - human language character 
-
-- Codepoints - things unicode spec gives numbers to (Go rune or int32)
-
-- Bytes - disk or memory
+.play weirdd.go /START OMIT/,/END OMIT/
 
 
 * Normalisation
 
-.play normalisation.go
+.play normalisation.go /START OMIT/,/END OMIT/
