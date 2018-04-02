@@ -76,6 +76,10 @@ In vim "Ctrl-v u 00A3"
 
 : May have to configure your terminal on linux 
 
+: Could have typed directly into string literal
+
+: Could have used unicode variable names!
+
 * 32 bit codepoint 
 
 * Upper Case U
@@ -93,8 +97,8 @@ In vim "Ctrl-v U 20A0"
 * Beer
 .play beer.go /START OMIT/,/END OMIT/
 
-* Weirdd
-.play weirdd.go /START OMIT/,/END OMIT/
+* Strange D
+.play stranged.go /START OMIT/,/END OMIT/
 
 * Normalisation
 
