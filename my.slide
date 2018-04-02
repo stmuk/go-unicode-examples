@@ -32,7 +32,7 @@ http://url/
 
 : Language - char and byte interchangable (used to be)
 
-: Few use consitantly
+: Few use constantly
 
 : start at bottom of stack
 
@@ -82,13 +82,13 @@ In vim "Ctrl-v u 00A3"
 
 * 32 bit codepoint 
 
-* Upper Case U
+- Upper Case U
 
 In vim "Ctrl-v U 20A0"
 
 .play euro.go /START OMIT/,/END OMIT/
 
-* Cat
+* Another 32 bit codepoint
 
 "Cat - tears of laughter"
 
@@ -99,6 +99,8 @@ In vim "Ctrl-v U 20A0"
 
 * Strange D
 .play stranged.go /START OMIT/,/END OMIT/
+
+: Contrived Example
 
 * Normalisation
 
