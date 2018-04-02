@@ -84,7 +84,9 @@ In vim "Ctrl-v u 00A3"
 
 - Upper Case U
 
-In vim "Ctrl-v U 20A0"
+In vim "Ctrl-v U 20AC"
+
+(not the historic 20A0 version!)
 
 .play euro.go /START OMIT/,/END OMIT/
 

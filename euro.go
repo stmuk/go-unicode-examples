@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	fmt.Println()
 	// START OMIT
-	s := "\U000020A0"
+	s := "\U000020AC"
 	fmt.Println(s)
 	fmt.Printf("length in bytes %d\n", len(s))
 	fmt.Printf("length in runes %d\n", len([]rune(s)))

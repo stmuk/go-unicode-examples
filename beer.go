@@ -10,9 +10,10 @@ import (
 
 // START OMIT
 func main() {
-	//	weird := "\U0001f3fd🍻"
-	weird := "e\u0301"
-	//weird := "\U0001f3fd\U0001f575"
+	//weird := "🍻\U0001f3fd"
+	//weird := "e\u0301"
+	weird := "\U0001f575\U0001f3fd"
+	//weird := "\U0001f575"
 	fmt.Println(weird)
 	fmt.Printf("%+q\n", weird)
 
@@ -25,7 +26,9 @@ func main() {
 	fmt.Printf("\nlength in runes: %d\n", len([]rune(weird)))
 	fmt.Printf("Number of chars: %d\n", countGraphemes(weird))
 
-	fmt.Printf("%+q\n", norm.NFC.String(weird))
+	not := norm.NFC.String(weird)
+	fmt.Printf("%+q\n", not)
+	fmt.Printf("Number of chars: %d\n", countGraphemes(not))
 
 }
 
