@@ -8,9 +8,19 @@ http://url/
 
 * Introduction
 
-US-ASCII - 127 characters
+1963 US-ASCII - 127 characters (7 bit)
 
-Unicode 10 (June 2017) - 136,690 characters. 
+1987 Latin -1 and -9 -  256 characters (8 bit)
+
+2017 Unicode 10 - 136,690 characters. 
+
+: Basic Introduction not advanced - keep it fairly simple
+
+: ASCII is now called US-ASCII (no Euro or Pound symbol)
+
+: Pound Sterling symbol is in Latin-1 and Euro in Latin-9
+
+: unicode 1988 Modern and ancient scripts
 
 * The Stack
 
@@ -19,6 +29,12 @@ Unicode 10 (June 2017) - 136,690 characters.
 - Codepoints - things unicode spec gives numbers to (Go rune or int32)
 
 - Bytes - disk or memory
+
+: Language - char and byte interchangable (used to be)
+
+: Few use consitantly
+
+: start at bottom of stack
 
 * Encodings
 
@@ -31,9 +47,9 @@ Two of the Go inventors (Thompson & Pike) created UTF-8 uses bytes but variable 
 - WTF-8
 Wobbly Transformation Format (probably something Very Bad)
 
-* BEER
+: Every thing is really bits at the bottom but what do they represent?
 
-.play beer.go /START OMIT/,/END OMIT/
+: WTF-8 (don't use it. Mozilla hack for internal systems used for legacy reasons)
 
 * UTF-8
 
@@ -43,24 +59,34 @@ Look at the first byte high bits
   0xxxxxxx (1 byte ASCII) 127 possible 
   110xxxxx 10xxxxxx 2047 possible
 
-* Examples
+: Superset of ASCII
+: Most are 3 bytes long
 
-- 16 bit codepoint
+* 16 bit codepoint
 
-In go .code fmt.println("\u00A3")
+- Lower Case u
+
+- Pound Symbol
 
 In vim "Ctrl-v u 00A3"
 
-£
+.play pound.go /START OMIT/,/END OMIT/
 
-- 32 bit "Cat - tears of laughter"
+: Any modern editor will have similar keystrokes
 
-In go .code fmt.println("\U0001f639")
+: May have to configure your terminal on linux 
 
-In vim "Ctrl-v U 0001f639"
-😹 
+* 32 bit codepoint 
+
+* Upper Case U
+
+In vim "Ctrl-v U 20A0"
+
+.play euro.go /START OMIT/,/END OMIT/
 
 * Cat
+
+"Cat - tears of laughter"
 
 .play cat.go /START OMIT/,/END OMIT/
 
@@ -69,7 +95,6 @@ In vim "Ctrl-v U 0001f639"
 
 * Weirdd
 .play weirdd.go /START OMIT/,/END OMIT/
-
 
 * Normalisation
 
