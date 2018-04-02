@@ -14,7 +14,8 @@ func main() {
 	//weird := "e\u0301" // acute accent e
 	// U0001f3fd is EMOJI MODIFIER FITZPATRICK TYPE-4
 	//weird := "\U0001f575\U0001f3fd" // SPY with dark skin
-	weird := "\U0001F608" // 😈
+	//weird := "\U0001F608" // 😈
+	weird := "\U0000202E"
 	fmt.Println(weird)
 	fmt.Printf("%+q\n", weird)
 
