@@ -10,10 +10,11 @@ import (
 
 // START OMIT
 func main() {
-	//weird := "🍻\U0001f3fd"
-	//weird := "e\u0301"
-	weird := "\U0001f575\U0001f3fd"
-	//weird := "\U0001f575"
+	//weird := "🍻\U0001f3fd" // beer
+	//weird := "e\u0301" // acute accent e
+	// U0001f3fd is EMOJI MODIFIER FITZPATRICK TYPE-4
+	//weird := "\U0001f575\U0001f3fd" // SPY with dark skin
+	weird := "\U0001F608" // 😈
 	fmt.Println(weird)
 	fmt.Printf("%+q\n", weird)
 

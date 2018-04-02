@@ -76,6 +76,8 @@ In vim "Ctrl-v u 00A3"
 
 : May have to configure your terminal on linux 
 
+: Even on macOS what you see in the terminal & browser may be different
+
 : Could have typed directly into string literal
 
 : Could have used unicode variable names!
@@ -96,8 +98,19 @@ In vim "Ctrl-v U 20AC"
 
 .play cat.go /START OMIT/,/END OMIT/
 
+: Note on linux that cat is mostly B&W
+: ChromeOS I was able to get colour working but it messed up my terminal session
+
 * Beer
 .play beer.go /START OMIT/,/END OMIT/
+
+Modify the devil to be Orange
+
+#stoutmoji in Unicode 11
+
+: doesn't work s Guinness petitioned the Unicode Consortium, which approves official emoji for software makers such as Apple and Microsoft, for a “stoutmoji” to represent dark beer.
+
+: The Belgian brewers aren’t taking the official route (which will of course result in compatibility issues with certain applications).
 
 * Strange D
 .play stranged.go /START OMIT/,/END OMIT/
