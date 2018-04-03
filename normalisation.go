@@ -7,21 +7,21 @@ import "golang.org/x/text/unicode/norm"
 func main() {
 
 	// START OMIT
-	one := "\u00e9"
-	two := "e\u0301"
+	one := "e\u0301"
+	two := "\u00e9"
 
-	fmt.Println(one, two)
+	fmt.Printf("one: %q two: %q\n", one, two)
 
 	if one == two {
-		fmt.Println("OK")
+		fmt.Println("equals")
 	} else {
-		fmt.Println("NOT OK")
+		fmt.Println("not equals")
 	}
 
 	if norm.NFC.String(one) == norm.NFC.String(two) {
-		fmt.Println("OK")
+		fmt.Println("equals")
 	} else {
-		fmt.Println("NOT OK")
+		fmt.Println("not equals")
 	}
 
 	// END OMIT
