@@ -80,6 +80,8 @@ Wobbly Transformation Format (probably something Very Bad)
 
 - iPhone crash with Indian character
 
+: Not displaying chars isn't necessarily Mojibake could be font issue
+
 * UTF-8
 
 - 1 to 4 bytes per codepoint (1 byte ASCII)
