@@ -57,7 +57,7 @@ https://suffolkgophers.github.io/
 simple only fixed length encoding but wasteful in terms of commonly used chars
 
 - UTF-8
-Two of the Go inventors (Ken Thompson & Rob Pike) created UTF-8 uses bytes but variable length encoding (compatibility with ASCII)
+Two of the Go inventors (Ken Thompson & Rob Pike) created UTF-8 which uses bytes but variable length encoding (compatibility with ASCII)
 
 - WTF-8
 Wobbly Transformation Format (probably something Very Bad)
