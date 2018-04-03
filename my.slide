@@ -118,7 +118,7 @@ In vim "Ctrl-v U 20AC" is modern Euro symbol
 
 : add skin tones to human characters
 
-: #stoutmoji in Unicode 11
+: BEER #stoutmoji in Unicode 11
 
 * Strange D
 .play stranged.go /START OMIT/,/END OMIT/
