@@ -109,10 +109,11 @@ In vim "Ctrl-v U 20AC" is modern Euro symbol
 .play cat.go /START OMIT/,/END OMIT/
 
 : Note on linux that cat is mostly B&W
-: ChromeOS I was able to get colour working but it messed up my terminal session
 
 * Accent
 .play accent.go /START OMIT/,/END OMIT/
+
+- tweet #stoutmoji
 
 : Composite unicode char
 
