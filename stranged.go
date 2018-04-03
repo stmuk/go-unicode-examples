@@ -12,7 +12,7 @@ func main() {
 	fmt.Println(weird)
 	fmt.Printf("length in bytes: %d\n", len(weird))
 	fmt.Printf("length in runes: %d\n", len([]rune(weird)))
-	fmt.Printf("Number of chars: %d\n", countGraphemes(weird))
+	fmt.Printf("Number of graphemes: %d\n", countGraphemes(weird))
 }
 
 func countGraphemes(s string) int {
