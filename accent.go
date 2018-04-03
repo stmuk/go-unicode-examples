@@ -22,11 +22,6 @@ func main() {
 	}
 
 	fmt.Printf("\nlength in runes: %d\n", len([]rune(accent)))
-	fmt.Printf("Number of chars: %d\n", countGraphemes(accent))
-
-	nor := norm.NFC.String(accent)
-	fmt.Printf("%+q\n", nor)
-	fmt.Printf("Number of chars: %d\n", countGraphemes(nor))
 
 }
 

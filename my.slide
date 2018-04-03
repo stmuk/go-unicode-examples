@@ -6,21 +6,23 @@ steve.mynott@gmail.com
 http://url/
 @steve_mynott
 
+: Basic Introduction not advanced - keep it fairly simple
+
 * Introduction
 
-1963 US-ASCII - 127 characters (7 bit)
+US-ASCII has 127 characters (7 bit)
 
-1987 Latin -1 and -9 -  256 characters (8 bit)
+Latin -1 and -9 has 256 characters (8 bit)
 
-2017 Unicode 10 - 136,690 characters. 
-
-: Basic Introduction not advanced - keep it fairly simple
+Unicode 10 has 136,690 characters (over a million possible)
 
 : ASCII is now called US-ASCII (no Euro or Pound symbol)
 
 : Pound Sterling symbol is in Latin-1 and Euro in Latin-9
 
-: unicode 1988 Modern and ancient scripts
+: unicode 1988 - Modern and ancient scripts
+
+: utf-8 now standard for web pages and email 
 
 * The Stack
 
@@ -30,11 +32,11 @@ http://url/
 
 - Bytes - disk or memory
 
+: start at bottom of stack
+
 : Language - char and byte interchangable (used to be)
 
-: Few use constantly
-
-: start at bottom of stack
+: Few use constantly. Character may mean codepoint
 
 * Encodings
 
@@ -49,6 +51,8 @@ Wobbly Transformation Format (probably something Very Bad)
 
 : Every thing is really bits at the bottom but what do they represent?
 
+: Many characters can be represented in a byte not 4 bytes
+
 : WTF-8 (don't use it. Mozilla hack for internal systems used for legacy reasons)
 
 * UTF-8
@@ -56,11 +60,15 @@ Wobbly Transformation Format (probably something Very Bad)
 - 1 to 4 bytes per codepoint (1 byte ASCII)
 
 Look at the first byte high bits
-  0xxxxxxx (1 byte ASCII) 127 possible 
-  110xxxxx 10xxxxxx 2047 possible
+
+  0xxxxxxx (1 byte ASCII) with 127 chars possible 
+  110xxxxx 10xxxxxx with 2047 chars possible
+
+- Extends to 3 and 4 bytes
 
 : Superset of ASCII
 : Most are 3 bytes long
+: Note due to use of high bits these bytes don't contain full 8 bits for codepoint
 
 * 16 bit codepoint
 
@@ -86,9 +94,9 @@ In vim "Ctrl-v u 00A3"
 
 - Upper Case U
 
-In vim "Ctrl-v U 20AC"
+In vim "Ctrl-v U 20AC" is modern Euro symbol
 
-(not the historic 20A0 version!)
+(not the historic ECU 20A0 version!)
 
 .play euro.go /START OMIT/,/END OMIT/
 
@@ -106,14 +114,9 @@ In vim "Ctrl-v U 20AC"
 
 : Composite unicode char
 
+: add skin tones to human characters
+
 : #stoutmoji in Unicode 11
-
-: doesn't work s Guinness petitioned the Unicode Consortium, which approves
-official emoji for software makers such as Apple and Microsoft, for a
-“stoutmoji” to represent dark beer.
-
-: The Belgian brewers aren’t taking the official route (which will of course
-result in compatibility issues with certain applications).
 
 * Strange D
 .play stranged.go /START OMIT/,/END OMIT/
