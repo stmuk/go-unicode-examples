@@ -57,6 +57,18 @@ Wobbly Transformation Format (probably something Very Bad)
 
 : WTF-8 (don't use it. Mozilla hack for internal systems used for legacy reasons)
 
+* Mojibake
+
+- Confused encodings leads to jumbled, unreadable characters
+
+- Tended to be a Japanese or Windows problem
+
+- Moving between different encodings
+
+- Stick to UTF-8
+
+- iPhone crash with Indian character
+
 * UTF-8
 
 - 1 to 4 bytes per codepoint (1 byte ASCII)
