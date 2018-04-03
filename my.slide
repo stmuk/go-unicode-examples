@@ -6,7 +6,18 @@ steve.mynott@gmail.com
 https://suffolkgophers.github.io/
 @steve_mynott
 
-: Basic Introduction not advanced - keep it fairly simple
+: First time speaker
+
+: Basic Introduction not advanced - keep it fairly simple - basics
+of what most programmers need to know to handle those "funny characters"
+
+: Why do we need unicode? The world isn't plain text (ASCII) anymore
+
+: Over 6000 living languages and many use non Latin characters
+
+: Academics need to be able to use dead languages
+
+: People want to send amusing emojis on their mobiles!
 
 * Introduction
 
@@ -46,7 +57,7 @@ Unicode 10 has 136,690 characters (over a million possible)
 simple only fixed length encoding but wasteful in terms of commonly used chars
 
 - UTF-8
-Two of the Go inventors (Thompson & Pike) created UTF-8 uses bytes but variable length encoding (compatibility with ASCII)
+Two of the Go inventors (Ken Thompson & Rob Pike) created UTF-8 uses bytes but variable length encoding (compatibility with ASCII)
 
 - WTF-8
 Wobbly Transformation Format (probably something Very Bad)
@@ -92,11 +103,9 @@ Look at the first byte high bits
 
 - Pound Symbol
 
-In vim "Ctrl-v u 00A3"
-
 .play pound.go /START OMIT/,/END OMIT/
 
-: Any modern editor will have similar keystrokes
+: Any modern editor/IDE will have similar keystrokes to the Go string literal syntax
 
 : May have to configure your terminal & font on linux, even on macOS what you see in the terminal & browser may be different
 
