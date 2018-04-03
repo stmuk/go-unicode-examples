@@ -104,13 +104,16 @@ In vim "Ctrl-v U 20AC"
 * Accent
 .play accent.go /START OMIT/,/END OMIT/
 
-: Modify the devil to be Orange
+: Composite unicode char
 
 : #stoutmoji in Unicode 11
 
-: doesn't work s Guinness petitioned the Unicode Consortium, which approves official emoji for software makers such as Apple and Microsoft, for a “stoutmoji” to represent dark beer.
+: doesn't work s Guinness petitioned the Unicode Consortium, which approves
+official emoji for software makers such as Apple and Microsoft, for a
+“stoutmoji” to represent dark beer.
 
-: The Belgian brewers aren’t taking the official route (which will of course result in compatibility issues with certain applications).
+: The Belgian brewers aren’t taking the official route (which will of course
+result in compatibility issues with certain applications).
 
 * Strange D
 .play stranged.go /START OMIT/,/END OMIT/
