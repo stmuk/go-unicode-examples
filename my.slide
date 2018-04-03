@@ -101,12 +101,12 @@ In vim "Ctrl-v U 20AC"
 : Note on linux that cat is mostly B&W
 : ChromeOS I was able to get colour working but it messed up my terminal session
 
-* Beer
-.play beer.go /START OMIT/,/END OMIT/
+* Accent
+.play accent.go /START OMIT/,/END OMIT/
 
-Modify the devil to be Orange
+: Modify the devil to be Orange
 
-#stoutmoji in Unicode 11
+: #stoutmoji in Unicode 11
 
 : doesn't work s Guinness petitioned the Unicode Consortium, which approves official emoji for software makers such as Apple and Microsoft, for a “stoutmoji” to represent dark beer.
 
