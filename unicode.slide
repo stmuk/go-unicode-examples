@@ -98,7 +98,7 @@ Look at the first byte high bits
 
 * 16 bit codepoint
 
-- Lower Case u
+- Lower Case u in string literal
 
 - Pound Symbol
 
@@ -112,11 +112,7 @@ Look at the first byte high bits
 
 * 32 bit codepoint 
 
-- Upper Case U
-
-In vim "Ctrl-v U 20AC" is modern Euro symbol
-
-(not the historic ECU 20A0 version!)
+- Upper Case U in string literal
 
 .play euro.go /START OMIT/,/END OMIT/
 
