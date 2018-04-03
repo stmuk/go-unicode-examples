@@ -6,31 +6,27 @@ import (
 	"golang.org/x/text/unicode/norm"
 )
 
-//
-
 // START OMIT
 func main() {
-	//weird := "🍻\U0001f3fd" // beer
-	//weird := "e\u0301" // acute accent e
-	// U0001f3fd is EMOJI MODIFIER FITZPATRICK TYPE-4
-	//weird := "\U0001f575\U0001f3fd" // SPY with dark skin
-	//weird := "\U0001F608" // 😈
-	weird := "\U0000202E"
-	fmt.Println(weird)
-	fmt.Printf("%+q\n", weird)
 
-	fmt.Printf("length in bytes: %d\n", len(weird))
+	fmt.Println("accent on its own \u0301")
 
-	for i := 0; i < len(weird); i++ {
-		fmt.Printf("%x ", weird[i])
+	accent := "e\u0301" // acute accent e ́
+	fmt.Println(accent)
+	fmt.Printf("%+q\n", accent)
+
+	fmt.Printf("length in bytes: %d\n", len(accent))
+
+	for i := 0; i < len(accent); i++ {
+		fmt.Printf("%x ", accent[i])
 	}
 
-	fmt.Printf("\nlength in runes: %d\n", len([]rune(weird)))
-	fmt.Printf("Number of chars: %d\n", countGraphemes(weird))
+	fmt.Printf("\nlength in runes: %d\n", len([]rune(accent)))
+	fmt.Printf("Number of chars: %d\n", countGraphemes(accent))
 
-	not := norm.NFC.String(weird)
-	fmt.Printf("%+q\n", not)
-	fmt.Printf("Number of chars: %d\n", countGraphemes(not))
+	nor := norm.NFC.String(accent)
+	fmt.Printf("%+q\n", nor)
+	fmt.Printf("Number of chars: %d\n", countGraphemes(nor))
 
 }
 
