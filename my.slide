@@ -69,7 +69,9 @@ Look at the first byte high bits
 - Extends to 3 and 4 bytes
 
 : Superset of ASCII
+
 : Most are 3 bytes long
+
 : Note due to use of high bits these bytes don't contain full 8 bits for codepoint
 
 * 16 bit codepoint
@@ -84,11 +86,7 @@ In vim "Ctrl-v u 00A3"
 
 : Any modern editor will have similar keystrokes
 
-: May have to configure your terminal on linux 
-
-: Even on macOS what you see in the terminal & browser may be different
-
-: Could have typed directly into string literal
+: May have to configure your terminal & font on linux, even on macOS what you see in the terminal & browser may be different
 
 : Could have used unicode variable names!
 
