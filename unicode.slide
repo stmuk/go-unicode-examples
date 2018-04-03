@@ -10,11 +10,9 @@ https://suffolkgophers.github.io/
 
 : Basic Introduction not advanced - keep it fairly simple - basics of what most programmers need to know to handle those "funny characters"
 
-: Why do we need unicode? The world isn't plain text (ASCII) anymore
+: Why do we need unicode? The world isn't European style plain text (ASCII) anymore
 
 : Over 6000 living languages and many use non Latin characters
-
-: Academics need to be able to use dead languages
 
 : People want to send amusing emojis on their mobiles!
 
@@ -106,7 +104,7 @@ Look at the first byte high bits
 
 : Any modern editor/IDE will have similar keystrokes to the Go string literal syntax
 
-: May have to configure your terminal & font on linux, even on macOS what you see in the terminal & browser may be different
+: May have to configure your terminal & font on some systems, even on macOS what you see in the terminal & browser may be different
 
 : Could have used unicode variable names!
 
@@ -125,8 +123,6 @@ In vim "Ctrl-v U 20AC" is modern Euro symbol
 "Cat - tears of laughter"
 
 .play cat.go /START OMIT/,/END OMIT/
-
-: On linux that cat is mostly B&W
 
 * Accent
 .play accent.go /START OMIT/,/END OMIT/
