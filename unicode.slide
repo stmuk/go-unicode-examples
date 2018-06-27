@@ -6,8 +6,6 @@ steve.mynott@gmail.com
 https://suffolkgophers.github.io/
 @steve_mynott
 
-: First time speaker
-
 : Basic Introduction not advanced - keep it fairly simple - basics of what most programmers need to know to handle those "funny characters"
 
 
@@ -19,7 +17,7 @@ https://suffolkgophers.github.io/
 
 - US-ASCII has 127 characters (7 bit)
 
-- Latin -1 and -9 has 256 characters (8 bit)
+- Latin -1 and -9 have 256 characters (8 bit)
 
 - Unicode 10 has 136,690 characters (over a million possible)
 
@@ -130,7 +128,7 @@ Look at the first byte high bits
 
 - tweet #stoutmoji
 
-: Composite unicode char
+: Composite unicode char - which I'll come to shortly
 
 : add skin tones to human characters
 
