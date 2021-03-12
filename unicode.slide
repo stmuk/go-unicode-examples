@@ -1,10 +1,9 @@
-Go Unicode 
+Go Unicode
 A Simple, Quick Introduction for Humans
 
 Steve Mynott
 steve.mynott@gmail.com
 https://suffolkgophers.github.io/
-@steve_mynott
 
 : Basic Introduction not advanced - keep it fairly simple - basics of what most programmers need to know to handle those "funny characters"
 
@@ -31,11 +30,11 @@ https://suffolkgophers.github.io/
 
 : unicode 10 from 2017
 
-: utf-8 now standard for web pages and email 
+: utf-8 now standard for web pages and email
 
 * The Stack
 
-- Graphemes - roughly human language character 
+- Graphemes - roughly human language character
 
 - Codepoints - things unicode spec gives numbers to (Go rune or int32)
 
@@ -51,7 +50,7 @@ https://suffolkgophers.github.io/
 
 * Encodings
 
-- UTF-32 
+- UTF-32
 simple only fixed length encoding but wasteful in terms of commonly used chars
 
 - UTF-8
@@ -86,7 +85,7 @@ Wobbly Transformation Format (probably something Very Bad)
 
 Look at the first byte high bits
 
-  0xxxxxxx (1 byte ASCII) with 127 chars possible 
+  0xxxxxxx (1 byte ASCII) with 127 chars possible
   110xxxxx 10xxxxxx with 2047 chars possible
 
 - Extends to 3 and 4 bytes
@@ -111,7 +110,7 @@ Look at the first byte high bits
 
 : Could have used unicode variable names!
 
-* 32 bit codepoint 
+* 32 bit codepoint
 
 - Upper Case U in string literal
 
